@@ -1,0 +1,7 @@
+winlogbeat.event_logs:
+  - name: Security
+    event_id: -4662
+  ignore_older: 1h
+
+output.logstash:
+  hosts: ["ip_address:5044"]
